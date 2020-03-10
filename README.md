@@ -1,4 +1,4 @@
-# stack_em_wins
+# addictions_flutter
 
 A new Flutter project.
 

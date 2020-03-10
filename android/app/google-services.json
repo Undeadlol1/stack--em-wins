@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "751578197173",
+    "firebase_url": "https://stack-em-wins.firebaseio.com",
+    "project_id": "stack-em-wins",
+    "storage_bucket": "stack-em-wins.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751578197173:android:ee98761dcb16a00f3d22fc",
+        "android_client_info": {
+          "package_name": "com.palei.stack_em_wins"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751578197173-fdbdpko5fc8jj122v3k0j0rafkt0eaeo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB59ITq0J2iQ1WpGwdrTpM8GgPQ7ViSIfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "751578197173-fdbdpko5fc8jj122v3k0j0rafkt0eaeo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

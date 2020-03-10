@@ -1,4 +1,4 @@
-package com.example.stack_em_wins
+package com.example.addictions_flutter
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

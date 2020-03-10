@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  function isAuthenticated() {
+    return request.auth != null && request.auth.uid != null;
+  }
+  match /databases/{database}/documents {
+    match /addictions/{addiction} {
+      allow list, read, update, delete: if isAuthenticated() && request.auth.uid == resource.data.userId;
+      allow create: if isAuthenticated();
+    }
+    match /triggers/{trigger} {
+      allow list, read, update, delete: if isAuthenticated() && request.auth.uid == resource.data.userId;
+      allow create: if isAuthenticated();
+    }
+    match /consequences/{consequence} {
+      allow list, read, update, delete: if isAuthenticated() && request.auth.uid == resource.data.userId;
+      allow create: if isAuthenticated();
+    }
+    match /alternatives/{alternative} {
+      allow list, read, update, delete: if isAuthenticated() && request.auth.uid == resource.data.userId;
+      allow create: if isAuthenticated();
+    }
+    // match /profiles/{userId} {
+    //   allow read, update, delete: if isAuthenticated() && request.auth.uid == userId;
+    //   allow create: if isAuthenticated();
+    // }
+  }
+}
